@@ -34,7 +34,7 @@ for i in range(3072):
     data2[i, :] = scale(data2[i,:])
 
 
-f = open('cf_test.csv', 'w', newline='')
+f = open('cf_train.csv', 'w', newline='')
 wr = csv.writer(f)
 for i in range(50000):
     wr.writerow(data2[i])
