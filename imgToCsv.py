@@ -1,12 +1,10 @@
 import numpy as np
 import csv
-
 import os
-import numpy as np
 import re
 from PIL import Image
 import copy
-import csv
+
 
 TRAIN_DIR ='C:\\cf10\\train\\train\\'
 train_img = [TRAIN_DIR+i for i in os.listdir(TRAIN_DIR)]
