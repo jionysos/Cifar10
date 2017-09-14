@@ -6,6 +6,8 @@ from PIL import Image
 import copy
 
 
+# train pic -> csv
+###########################
 TRAIN_DIR ='C:\\cf10\\train\\train\\'
 train_img = [TRAIN_DIR+i for i in os.listdir(TRAIN_DIR)]
 # print(len(train_img))
@@ -42,7 +44,7 @@ f.close()
 
 
 # label one-hot encoding
-
+###############################
 label = np.loadtxt('C:\\cf10\\trainLabels.csv', delimiter=',', usecols=[1], dtype=str,skiprows=1)
 # print(label) # "b'truck'"
 test_label = np.zeros((50000,10), dtype=np.int)
