@@ -39,7 +39,10 @@ for i in range(50000):
 f.close()
 
 
-#####################################################################################################
+
+
+# label one-hot encoding
+
 label = np.loadtxt('C:\\cf10\\trainLabels.csv', delimiter=',', usecols=[1], dtype=str,skiprows=1)
 # print(label) # "b'truck'"
 test_label = np.zeros((50000,10), dtype=np.int)
